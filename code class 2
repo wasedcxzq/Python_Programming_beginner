@@ -1,0 +1,14 @@
+print("83203")
+
+n = 83203
+print(1469+5487*n)
+
+import sys
+print(sys.version)
+
+n = int(input("Age:"))
+if n >= 18:
+    print("You are an adult.")
+elif n != 18:
+    print("You aren’t an adult.")
+
