@@ -1,0 +1,30 @@
+name = "Max"
+age = 12
+print(name,age)
+
+x, y, z = 4, 8, 7
+print(x, y, z)
+
+x = 104 #int
+y = 3.1415926 #float
+z = "Hi" #str
+print(type(x)), type(y), type(z))
+
+Taiwan = "China"
+print(type(Taiwan))
+China = 8964
+print(type(China))
+
+from random import choice
+L = [1,2,3,4,5,6,7,8,9,10]
+while True:
+    n = int(input("Choose a number from 1-10:"))
+    if n == choice(L):
+        print("you got it!")
+        break
+    elif n > 10:
+        print("To big!")
+    elif n < 1:
+        print("To small!")
+    else:
+        print("Wrong!")
