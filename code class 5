@@ -1,0 +1,87 @@
+x = 15
+print(x)
+x += 3
+print(x)
+x -= 3
+print(x)
+x *= 3
+print(x)
+x /= 3
+print(x)
+x %= 4
+print(x)
+x //= 3
+print(x)
+x **= 3
+print(x)
+x &= 3
+print(x)
+x |= 3
+print(x)
+x ^= 3
+print(x)
+x >>= 3
+print(x)
+x <<= 3
+print(x)
+
+angle = int(input("請輸入正多邊形的邊數："))
+if angle > 2:
+    inangleplus = 180 * angle - 360
+    inangle = inangleplus / angle
+    outangle = 360 / angle
+    L = angle - 3
+    LL = L * angle / 2
+    triangle = angle - 2 
+    print("此正", angle, "邊形的內角和為", inangleplus, "，其中一個內角為", inangle, "，其中一個外角為", outangle, "，且一個點可以連出", L, "條對角線，對角線總數則為", LL, "，且其最多可以分割成", triangle, "個三角形。")
+else:
+    print("此正多邊形不存在！")
+
+x = int(input("請輸入費氏數列的第一個數字："))
+y = int(input("請輸入費氏數列的第二個數字："))
+n = int(input("請輸入想知道的費氏數列長度："))
+print(x, y, end = " ")
+for z in range(1, n - 1):
+    z = x + y
+    print(z, end = " ")
+    x = y
+    y = z
+end
+
+x = int(input("請輸入等差數列的第一個數字："))
+y = int(input("請輸入等差數列的第二個數字："))
+n = int(input("請輸入想知道的等差數列長度："))
+print(x, y, end = " ")
+for z in range(1, n - 1):
+    z = 0 - x + y
+    print(y + z, end = " ")
+    x = y
+    y = y + z
+end
+
+x = int(input("請輸入等比數列的第一個數字："))
+y = int(input("請輸入等比數列的第二個數字："))
+n = int(input("請輸入想知道的等比數列長度："))
+print(x, y, end = " ")
+for z in range(1, n - 1):
+    z = y / x
+    print(y * z, end = " ")
+    x = y
+    y = y * z
+end
+
+x = int(input("請輸入等差級數的第一個數字："))
+y = int(input("請輸入等差級數的最後ㄧ個數字："))
+n = int(input("請輸入想知道的等差級數項數："))
+d = (y - x) / (n - 1)
+print("公差為", d)
+plus = (x + y) * n / 2
+print("級數和為", plus)
+
+x = int(input("請輸入等差級數的第一個數字："))
+d = int(input("請輸入等差級數的公差："))
+n = int(input("請輸入想知道的等差級數項數："))
+y = x + (n - 1) * d
+print("最後一項為", y)
+plus = (x * 2 + (n - 1) * d) * n / 2
+print("級數和為", plus)
