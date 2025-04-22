@@ -1,0 +1,80 @@
+a = int(input("a = "))
+b = int(input("b = "))
+if a == b :
+    print("a and b are equal")
+elif a > b :
+    print("a is greater than b")
+elif a < b :
+    print("b is greater than a")
+
+a = 3338899
+b = 89098
+c = 787878
+if a > b or b > c :
+    print("At least one of the conditions is True")
+
+day = 7
+match day:
+  case 1:
+    print("Monday")
+  case 2:
+    print("Tuesday")
+  case 3:
+    print("Wednesday")
+  case 4:
+    print("Thursday")
+  case 5:
+    print("Friday")
+  case 6:
+    print("Saturday")
+  case 7:
+    print("Sunday")
+
+day = 7
+match day:
+  case 6:
+    print("Today is Saturday")
+  case 7:
+    print("Today is Sunday")
+  case _:
+    print("Looking forward to the Weekend")
+
+month = 5
+day = 4
+match day:
+  case 1 | 2 | 3 | 4 | 5 if month == 4:
+    print("A weekday in April")
+  case 1 | 2 | 3 | 4 | 5 if month == 5:
+    print("A weekday in May")
+  case _:
+    print("No match")
+
+day = int(input("please num 1-7:"))
+match day:
+  case 1 | 2 | 3 | 4 | 5 :
+    print("weekday")
+  case 6 | 7 :
+    print("weekend")
+  case _:
+    print("please input num 1-7!")
+
+num = [1,2,3,4,5,6,7,8,9,10]
+for nums in num :
+    print(nums)
+for i in range(0,10):
+    print(num[i])
+
+for i in range(1, 40):
+    print('# ' * i)
+
+a = int(input("請輸入第一個整數："))
+b = int(input("請輸入第二個整數："))
+print("這兩個整數之和為",a + b)
+
+a = int(input("請輸入第一個整數："))
+b = int(input("請輸入第二個整數："))
+print("這兩個整數的平方和為",a ** 2 + b ** 2)
+
+x = int(input("請輸入圓的半徑："))
+print("面積約為", x * x * 3.14, "，周長約為", x * 2 * 3.14)
+
