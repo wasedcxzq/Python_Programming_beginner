@@ -1,0 +1,137 @@
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
+
+while 1 == 1:
+    year = int(input("請輸入西元年份："))
+    month = int(input("請輸入月份："))
+    if year < 1 or 12 < month or month < 1:
+        print("請輸入存在的年/月份!!!")
+    elif year % 4 == 1 or year % 4 == 2 or year % 4 == 3 and year > 0 and 13 > month > 0:
+        if month == 1:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 2:
+            print("西元", year, "年的", month, "月共有", 28, "天")
+            break
+        elif month == 3:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 4:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 5:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 6:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 7:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 8:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 9:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 10:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 11:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 12:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+    elif year % 4 == 0 and year > 0 and 13 > month > 0:
+        if month == 1:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 2:
+            print("西元", year, "年的", month, "月共有", 29, "天")
+            break
+        elif month == 3:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 4:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 5:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 6:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 7:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 8:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 9:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 10:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+        elif month == 11:
+            print("西元", year, "年的", month, "月共有", 30, "天")
+            break
+        elif month == 12:
+            print("西元", year, "年的", month, "月共有", 31, "天")
+            break
+
+def greet(y = ""):
+    print("Hello! I'm " + y + "! Nice to meet you!")
+greet("Max Hung")
+greet("Ryan Lin")
+greet("Rose Wu")
+
+def num(n):
+    if n == 9:
+        print(n)
+        return 1
+    else:
+        print(n)
+    return num(n + 1)
+print(num(3))
+
+def convert_year(year, to_type="AD"):
+    if to_type == "AD":
+        return year + 1911
+    elif to_type == "ROC":
+        if year <= 1911:
+            raise ValueError("西元年份必須大於1911才能轉為民國年")
+        return year - 1911
+    else:
+        raise ValueError("to_type 必須是 'AD' 或 'ROC'")
+print("民國112年對應西元:", convert_year(112, "AD"))
+print("西元2025年對應民國:", convert_year(2025, "ROC"))
+
+def calculate_area(height, width):
+    return height * width
+def main():
+    try:
+        height = float(input("請輸入矩形的高："))
+        width = float(input("請輸入矩形的寬："))
+        area = calculate_area(height, width)
+        print(f"矩形的面積為：{area}")
+    except ValueError:
+        print("請輸入數字格式的高與寬！")
+main()
+
+def time_to_minutes(hours, minutes):
+    return hours * 60 + minutes
+def main():
+    try:
+        a = int(input("請輸入小時 (a)："))
+        b = int(input("請輸入分鐘 (b)："))
+        x = time_to_minutes(a, b)
+        print(f"總共為 {x} 分鐘")
+    except ValueError:
+        print("請輸入整數格式的小時與分鐘！")
+main()
