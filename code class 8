@@ -1,0 +1,61 @@
+def my_function(years = "90"):
+  print("I am " + years + " years old")
+
+my_function("87")
+my_function("64")
+my_function()
+my_function("69")
+
+def my_function(n):
+  return 87 * n
+
+print(my_function(38002))
+print(my_function(99900))
+print(my_function(54188))
+
+def my_fun1(year):
+    return year + 1911
+
+def my_fun2(year):
+    return year - 1911
+
+year = int(input("please input 民國："))
+print("西元年為", my_fun1(year))
+
+year = int(input("please input 西元："))
+print("民國年為", my_fun2(year))
+
+h = int(input("please input height："))
+w = int(input("please input width："))
+def area_fun(h,w):
+    return h * w
+
+print("矩形的面積為", area_fun(h,w))
+
+a = int(input("please input num a (hour)："))
+b = int(input("please input num b (min) ："))
+def cal_min(a,b):
+    return a * 60 + b
+
+print("x =", cal_min(a,b))
+
+num = ["1", "2", "3"]
+print(num[0])
+print(num[1])
+print(num[2])
+print(num)
+for i in range(0,3):
+    print(num[i])
+for i in num:
+    print(i)
+num.append("4")
+print(num)
+num.pop(2)
+print(num)
+num.remove("1")
+print(num)
+
+i_array=[]
+for i in range(0,3):
+    i_array.append(int(input("please input a num:")))
+print(i_array)
