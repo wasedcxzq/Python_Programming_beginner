@@ -1,0 +1,28 @@
+num = list(("1", "2", "3", "4", "5"))
+num1 = ["6", "7", "8", "9", "10"]
+
+print(len(num))
+print(type(num))
+print(num[3])
+print(num[-5])
+print(num[-4:3])
+print(num[:2])
+print(num[2:])
+if True in num:
+    print("Yes, 'True' is in the num list")
+else:
+    print("No, 'True' isn't in the num list")
+num[2] = "middle"
+print(num)
+num[0:2] = ["first", "second"]
+print(num)
+num[3:4] = ["4", "4.25", "4.5", "4.75"]
+print(num)
+num[3:8] = ["last"]
+print(num)
+num.insert(0, "0")
+print(num)
+num.append("inf")
+print(num)
+num.extend(num1)
+print(num)
